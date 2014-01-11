@@ -1,0 +1,213 @@
+\subsection{Exzentrität}
+\begin{frame}
+\frametitle{Lineare Exzentrität}
+\begin{definition}
+	$e = \sqrt{a^2\pm b^2}$
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+	\centering
+		\resizebox{.5\linewidth}{!}{
+			\input{./src/graphics/Ellipse}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{ccccll}
+		\overline{M{F}_1}^2 & + & \overline{M{S}_3}^2 & = & \overline{{F}_1{S}_3}^2 &\\
+		e^2 & + & b^2 & = & a^2 &\\
+		&& e & = & \sqrt{a^2-b^2}
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+	\centering
+		\resizebox{.5\linewidth}{!}{
+			\input{./src/graphics/Hyperbel}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{ccccll}
+		\overline{M{S}_1}^2 & + & \overline{{S}_1{F'}_1}^2 & = & \overline{M{F'}_1}^2 &\\
+		a^2 & + & b^2 & = & e^2 &\\
+		&& e & = & \sqrt{a^2+b^2}
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerische Exzentrität}
+\begin{definition}
+	$\epsilon = \frac{e}{a}$
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+   \text{Ausprägung($\epsilon$)} = \left\{
+     \begin{array}{lr}
+       Kreis & \epsilon = 0 \\
+       Ellipse & \epsilon < 1\\
+       Parabel & \epsilon = 1\\
+       Hyperbel & \epsilon > 1
+     \end{array}
+   \right.
+\end{displaymath}
+\end{frame}
+
+\subsection{Ellipse}
+\begin{frame}
+\begin{figure}[h]
+	\centering
+		\resizebox{.5\linewidth}{!}{
+			\input{./src/graphics/Ellipse}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} + \overline{{PF}_2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} + \sqrt{{(e-x)}^2 + y^2} & = & 2a
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} + \overline{{PF}_2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} + \sqrt{{(e-x)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} & = & 2a - \sqrt{{(e-x)}^2 + y^2}\\
+		\sqrt{{(e+x)}^2 + y^2}^2 & = & \left (2a - \sqrt{{(e-x)}^2 + y^2}\right )^2\\
+		e^2 + 2ex + x^2 + y^2 & = & 4a^2 - 4a \sqrt{(e-x)^2+y^2}\\
+		&& + e^2 - 2ex + x^2 + y^2\\
+		a\sqrt{{(e-x)}^2 + y^2} & = & a^2 - ex\\
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\left (a\sqrt{{(e-x)}^2 + y^2}\right )^2 & = & \left(a^2 - ex\right)^2\\
+		a^2e^2 - 2a^2ex + a^2x^2 + a^2y^2 &=& a^4 - 2a^2ex + e^2x^2\\
+		a^2x^2 - e^2x^2 + a^2y^2 &=& a^4 - a^2e^2\\
+		\mathbf{\left(a^2 - e^2\right)}x^2 + a^2y^2 &=& a^2\mathbf{\left(a^2 - e^2\right)}\\
+		\mathbf{b^2}x^2 + a^2y^2 &=& a^2\mathbf{b^2}\\
+		\frac{x^2}{a^2} + \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\frac{x^2}{r^2} + \frac{y^2}{r^2} &=& 1\\
+		x^2 + y^2 &=& r^2
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\subsection{Parabel}
+\begin{frame}
+\begin{figure}[h]
+	\centering
+		\resizebox{.5\linewidth}{!}{
+			\input{./src/graphics/Parabel}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{PF} &=& \overline{Pl}\\
+		\sqrt{\left(x-\frac{p}{2}\right)^2+y^2} &=& \frac{p}{2} + x\\
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{PF} &=& \overline{Pl}\\
+		\sqrt{\left(x-\frac{p}{2}\right)^2+y^2} &=& \frac{p}{2} + x\\
+		\left(x-\frac{p}{2}\right)^2+y^2 &=& \left(\frac{p}{2} + x\right)^2\\
+		x^2 - px + \frac{p^2}{4} + y^2 &=& x^2 + px + \frac{p^2}{4}\\
+		y^2 &=& 2px
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\subsection{Hyperbel}
+\begin{frame}
+\begin{figure}[h]
+	\centering
+		\resizebox{.5\linewidth}{!}{
+			\input{./src/graphics/Hyperbel}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} - \overline{{PF}_2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} - \sqrt{{(e-x)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e+(-x))}^2 + y^2} - \sqrt{{((-x)-e)}^2 + y^2} & = & 2a\\
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} - \overline{{PF}_2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} - \sqrt{{(e-x)}^2 + y^2} & = & 2a\\
+		\sqrt{{(e+x)}^2 + y^2} & = & 2a + \sqrt{{(e-x)}^2 + y^2}\\
+		\sqrt{{(e+x)}^2 + y^2}^2 & = & \left (2a + \sqrt{{(e-x)}^2 + y^2}\right )^2\\
+		e^2 + 2ex + x^2 + y^2 & = & 4a^2 + 4a \sqrt{(e-x)^2+y^2}\\
+		&& + e^2 - 2ex + x^2 + y^2\\
+		a\sqrt{{(e-x)}^2 + y^2} & = & ex - a^2\\
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\left (a\sqrt{{(e-x)}^2 + y^2}\right )^2 & = & \left(ex - a^2\right)^2\\
+		a^2e^2 - 2a^2ex + a^2x^2 + a^2y^2 &=& e^2x^2 - 2a^2ex + a^4\\
+		a^2e^2 - a^4 &=& e^2x^2 - a^2x^2 - a^2y^2\\
+		e^2x^2 - a^2x^2 - a^2y^2 &=& a^2e^2 - a^4\\
+		\left(e^2 - a^2\right)x^2 - a^2y^2 &=& a^2\left(e^2 - a^2\right)\\
+		b^2x^2 - a^2y^2 &=& a^2b^2\\
+		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\overline{{PF}_1} - \overline{{PF}_2} & = & 2a\\
+		\sqrt{{(e+(-x))}^2 + y^2} & = & 2a\\
+		- \sqrt{{((-x)-e)}^2 + y^2} &&\\
+		\sqrt{{(e-x)}^2 + y^2} & = & 2a + \sqrt{{(-e-x)}^2 + y^2}\\
+		\sqrt{{(e-x)}^2 + y^2}^2 & = & \left (2a + \sqrt{{(-e-x)}^2 + y^2}\right )^2\\
+		e^2 - 2ex + x^2 + y^2 & = & 4a^2 + 4a \sqrt{(-e-x)^2+y^2}\\
+		&& + e^2 + 2ex + x^2 + y^2\\
+		a\sqrt{{(-e-x)}^2 + y^2} & = & -ex - a^2\\
+	\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\left (a\sqrt{{(-e-x)}^2 + y^2}\right )^2 & = & \left(-ex - a^2\right)^2\\
+		a^2e^2 + 2a^2ex + a^2x^2 + a^2y^2 &=& e^2x^2 + 2a^2ex + a^4\\
+		a^2e^2 - a^4 &=& e^2x^2 - a^2x^2 - a^2y^2\\
+		e^2x^2 - a^2x^2 - a^2y^2 &=& a^2e^2 - a^4\\
+		\left(e^2 - a^2\right)x^2 - a^2y^2 &=& a^2\left(e^2 - a^2\right)\\
+		b^2x^2 - a^2y^2 &=& a^2b^2\\
+		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+\end{frame}

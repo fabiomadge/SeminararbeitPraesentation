@@ -1,0 +1,32 @@
+\begin{pspicture}(-6,-4)(6,4)
+	\psgrid[griddots=3, subgriddiv=0]
+	\psellipse[linewidth=2pt](0, 0)(5.035,3.035)
+	\uput*[270](0,0){$M$}
+	\uput*[310](2.5,-2.6){$P$}
+	\uput*[60](4,0){${F}_1$}
+	\uput*[180](-4,0){${F}_2$}
+	\uput*[0](5,0){${S}_1$}
+	\uput*[180](-5,0){${S}_2$}
+	\uput*[90](0,3){${S}_3$}
+	\uput*[270](0,-3){${S}_4$}
+	\uput*[270](2.5,0){$a$}
+	\uput*[180](0,1.5){$b$}
+	\uput*[90](-2,0){$e$}
+	\rput[b]{36.87}(-2,1.5){\uput[d](0,0){$a$}}
+	\rput[b]{-36.87}(2,1.5){\uput[u](0,0){$a$}}
+	\psline(0,0)(5,0)%a
+	\psline(0,0)(0,3)%b
+	\psline(0,0)(-4,0)%e
+	\psline(0,3)(4,0)%S3F1
+	\psline(0,3)(-4,0)%S3F2
+	\psline(2.5,-2.6)(4,0)%PF1
+	\psline(2.5,-2.6)(-4,0)%PF2
+	\psdots[linecolor=blue](0,0)%M
+	\psdots[linecolor=blue](2.5,-2.6)%P
+	\psdots[linecolor=blue](4,0)%F1
+	\psdots[linecolor=blue](-4,0)%F2
+	\psdots[linecolor=blue](5,0)%S1
+	\psdots[linecolor=blue](-5,0)%S2
+	\psdots[linecolor=blue](0,3)%S3
+	\psdots[linecolor=blue](0,-3)%S4
+\end{pspicture}

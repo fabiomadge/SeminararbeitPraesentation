@@ -1,0 +1,95 @@
+\documentclass[a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{pstricks}
+\usepackage{pst-plot,pst-math}
+\usepackage[left=1.5cm, right=1.5cm, top=1.0cm, bottom=1.0cm]{geometry}
+\pagenumbering{gobble}
+\title{Einführung in die Kegelschnitte}
+\author{Fabio Madge Pimentel}
+\date{December 19, 2013}
+
+\begin{document}
+
+\maketitle
+
+Die Kegelschnitte werden durch den Schnittrand eines Doppelkegels und einer Ebene gebildet.
+
+\vspace{4 mm}
+
+\begin{table}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+
+	\centering
+		\resizebox{.9\linewidth}{!}{
+					\input{./src/graphics/Ellipse}
+		}
+
+\begin{displaymath}
+	\begin{array}{rcl}
+		Ellipse  & = & \{P\in E^2\;|\;\overline{{PF}_1} + \overline{{PF}_2} = 2a\}
+	\end{array}
+\end{displaymath}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\frac{x^2}{a^2} + \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+
+	\centering
+		\resizebox{.9\linewidth}{!}{
+					\input{./src/graphics/Parabel}
+		}
+
+\begin{displaymath}
+	\begin{array}{rcl}
+		Parabel  & = & \{P\in E^2\;|\;\overline{PF} = \overline{Pl}\}\
+	\end{array}
+\end{displaymath}
+\begin{displaymath}
+	\begin{array}{rcl}
+		y^2 &=& 2px
+	\end{array}
+\end{displaymath}
+\end{minipage}
+\end{table}
+
+\begin{figure}[h]
+	\centering
+		\resizebox{.46\linewidth}{!}{
+			\input{./src/graphics/Hyperbel}
+		}
+\end{figure}
+\begin{displaymath}
+	\begin{array}{rcl}
+		Hyperbel & = & \{P\in E^2\;|\;|\overline{{PF}_2} - \overline{{PF}_1}| = 2a\}
+	\end{array}
+\end{displaymath}
+\begin{displaymath}
+	\begin{array}{rcl}
+		\frac{x^2}{a^2} - \frac{y^2}{b^2} &=& 1
+	\end{array}
+\end{displaymath}	
+
+\large{Lineare Exzentrität}
+
+\begin{displaymath}
+	\begin{array}{rcl}
+		e & = & \sqrt{a^2\pm b^2}
+	\end{array}
+\end{displaymath}
+
+\large{Numerische Exzentrizität}
+
+\begin{displaymath}
+	\epsilon = \frac{e}{a}
+\end{displaymath}
+
+\end{document}

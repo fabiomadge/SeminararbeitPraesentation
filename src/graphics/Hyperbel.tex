@@ -1,0 +1,40 @@
+\begin{pspicture}(-5,-4)(5,4)
+	\psset{algebraic,plotpoints=500}
+	\psgrid[griddots=3, subgriddiv=0]
+	\psplot[linewidth=2pt]{1}{4.123}{sqrt(x^2-1)}
+	\psplot[linewidth=2pt]{1}{4.123}{-sqrt(x^2-1)}
+	\psplot[linewidth=2pt]{-1}{-4.123}{sqrt(x^2-1)}
+	\psplot[linewidth=2pt]{-1}{-4.123}{-sqrt(x^2-1)}
+	\pscircle[linestyle=dashed](1.4142,0){1}
+	\pscircle[linestyle=dashed](-1.4142,0){1}
+	\pscircle[linestyle=dashed](1.4142,0){3}
+	\pscircle[linestyle=dashed](-1.4142,0){3}
+	\uput*[270](0,0){$M$}
+	\uput{0.3}[20](1.4142,1){$P$}
+	\uput{0.3}[340](1.4142,-1){$P'$}
+	\uput{0.3}[160](-1.4142,1){$P''$}
+	\uput{0.3}[200](-1.4142,-1){$P'''$}
+	\uput*{0.1}[0](1.4142,0){${F}_1$}
+	\uput*[180](-1.4142,0){${F}_2$}
+	\uput[240](1,0){${S}_1$}
+	\uput[300](-1,0){${S}_2$}
+	\uput*[0](2,0){$D$}
+	\uput*[90](0.5,0){$a$}
+	\uput*[150](0,0.5){$b$}
+	\uput*{0.04}[90](-0.7071,0){$e$}
+	\psline(0,0)(1,0)%a
+	\psline(0,0)(0,1)%b
+	\psline(0,0)(-1.4142,0)%e
+	\psline(1.4142,1)(1.4142,0)%PF1
+	\psline(1.4142,1)(-1.4142,0)%PF2
+	\psdots[linecolor=blue](0,0)%M
+	\psdots[linecolor=blue](1,0)%S1
+	\psdots[linecolor=blue](-1,0)%S2
+	\psdots[linecolor=blue](1.4142,0)%F1
+	\psdots[linecolor=blue](-1.4142,0)%F2
+	\psdots[linecolor=blue](2,0)%D
+	\psdots[linecolor=blue](1.4142,1)%P
+	\psdots[linecolor=blue](1.4142,-1)%P'
+	\psdots[linecolor=blue](-1.4142,1)%P''
+	\psdots[linecolor=blue](-1.4142,-1)%P'''
+\end{pspicture}
